@@ -72,5 +72,4 @@ group :test do
   gem "webdrivers"
 end
 
-
 # rubocop:enable Style/StringLiterals
