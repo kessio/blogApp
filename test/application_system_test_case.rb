@@ -1,3 +1,4 @@
+# rubocop:disable all
 require "test_helper"
 
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
