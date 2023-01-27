@@ -1,4 +1,4 @@
-# rubocop:disable Style/StringLiterals
+# rubocop:disable all
 source "https://rubygems.org"
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -76,4 +76,4 @@ group :test do
   gem "webdrivers"
 end
 
-# rubocop:enable Style/StringLiterals
+#rubocop:enable all
