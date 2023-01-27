@@ -230,13 +230,18 @@ I would like to thank...
 
 > Add at least 2 questions new developers would ask when they decide to use your project.
 
-- **[Question_1]**
+- **What is the difference between using rake and rails?**
 
-  - [Answer_1]
+  - Rails core team decided to have consistency by enabling rails command to support everything that rake does.
 
-- **[Question_2]**
+For example in Rails 5 commands like db:migrate, db:setup, db:test etc which are part of rake command in Rails 4 are now being supported by rails command. However you can still choose to use rake to run those commands similar to how they were run in Rails 4. This is because Rails community has introduced Rake Proxy instead of completely moving the command options from rake to rails.
 
-  - [Answer_2]
+What happens internally is that when rails db:migrate command is executed, Rails checks if db:migrate is something that rails natively supports or not. In this case db:migrate is not natively supported by rails, so Rails delegates the execution to Rake via Rake Proxy.
+
+If you want to see all the commands that is supported by rails in Rails 5 then you can get a long list of options by executing rails --help.
+
+- **What's new in Rails version 7**
+- This article explain what's new with [Ruby on rail version 7](https://www.solutelabs.com/blog/ruby-on-rails-7)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
