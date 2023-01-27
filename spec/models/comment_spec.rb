@@ -11,5 +11,4 @@ RSpec.describe Comment, type: :model do
     comment.author_id = nil
     expect(comment).to_not be_valid
   end
-
 end
