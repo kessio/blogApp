@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Comment, type: :model do
-  subject(:comment) { Comment.create(post_id: 1, author_id: 1, text: "This is a comment") }
+  subject(:comment) { Comment.create(post_id: 1, author_id: 1, text: 'This is a comment') }
 
   it 'Post id should be present' do
     comment.post_id = nil
