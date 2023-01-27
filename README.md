@@ -188,9 +188,9 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- [ ] ** User Authentication**
-- [ ] ** Design User Interface**
-- [ ] ** CRUD Operations**
+- [ ] **User Authentication**
+- [ ] **Design User Interface**
+- [ ] **CRUD Operations**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
