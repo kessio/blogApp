@@ -55,7 +55,7 @@ After you're finished please remove all the comments and instructions!
 
 > The Blog app will be a classic example of a blog website. It will be a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
-**Blog App** is a web app
+**Blog App** is a classic example of a blog website. It is fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -90,9 +90,10 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Login Functionality**
+- **Post an article**
+- **Like a post**
+- **Comment a post**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
