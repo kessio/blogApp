@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "PostsRequests", type: :request do
+RSpec.describe 'PostsRequests', type: :request do
   describe 'GET /index' do
     it 'gets posts' do
       get '/posts/index'

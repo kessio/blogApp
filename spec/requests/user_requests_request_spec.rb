@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "UserRequests", type: :request do
+RSpec.describe 'UserRequests', type: :request do
   describe 'GET /index' do
     it 'gets users' do
       get '/'
