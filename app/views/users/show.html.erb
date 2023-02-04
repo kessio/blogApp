@@ -1,1 +1,13 @@
-<h2>Show a single user</h2>
+<div>
+<div class="user-container">
+    <div class="photo"></div>
+    <div class="user-info">
+      <h1><%= @user.name%></h1>
+      <h4>Number of posts: <%= @user.posts_counter%></h4>
+    </div>
+    </div>
+    <div class="bio">
+    <h4>Bio</h4>
+    <p><%= @user.bio%></p>
+  </div>
+</div>
