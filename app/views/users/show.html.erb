@@ -18,4 +18,5 @@
       <p class="likes-comments">Comments: <%= post.comments_counter%> Likes: <%= post.likes_counter%></p>
       </div>
     <%end%>
+      <button><%=link_to 'See all posts', user_posts_path(@user), :class => 'link'%></button>
 </div>
