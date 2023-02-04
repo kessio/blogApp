@@ -5,6 +5,7 @@ class CommentsController < ApplicationController
       format.html { render :new, locals: { comment: @comment } }
     end
   end
+
   def create
     @comment = Comment.new(comment_params)
 
@@ -18,9 +19,10 @@ class CommentsController < ApplicationController
       end
     end
   end
+
   private
 
   def comment_params
     params.require(:comment).permit(:text).merge(author: current_user, post_id: params.require(:post_id))
   end
-  end
+end
