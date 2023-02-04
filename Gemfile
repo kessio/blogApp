@@ -5,6 +5,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby "3.1.2"
 
 # Use RSpec for testing [
+gem 'rails-controller-testing'
 gem 'rspec-rails', '~> 4.0.0.beta2'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
