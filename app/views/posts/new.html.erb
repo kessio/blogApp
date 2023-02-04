@@ -1,0 +1,9 @@
+<h2> NEW POST </h2>
+ <%= form_with model: @post, url: user_posts_url, method: :post do |form| %>
+ <%= form.label :title, 'Title' %>
+    <%= form.text_field :title %>
+    <%= form.label :text, 'Text' %>
+    <%= form.text_area :text %>
+    <%= form.submit 'Post' %>
+<%end%>
+
