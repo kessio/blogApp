@@ -1,0 +1,23 @@
+.post {
+  border: 2px solid;
+  margin: 2% 0 0 0;
+  padding: 2%;
+}
+
+.likes-comments {
+  padding-left: 80%;
+  margin: 0;
+  width: fit-content;
+}
+
+.comments {
+  border: 2px solid;
+  padding: 0 1%;
+  margin: 1px 0;
+}
+
+.title-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
