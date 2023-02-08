@@ -14,7 +14,7 @@ RSpec.describe Post, type: :system do
     5.times do
       Comment.create(post: @post,
                      author: @user,
-                     text: 'hello yimi',
+                     text: 'Good job on the post',
                      post_id: @post.id,
                      author_id: @user.id)
   end
@@ -29,7 +29,5 @@ RSpec.describe Post, type: :system do
     expect(page.body).to have_content(@user.post_counter.to_s)
   end
 
-
-
-
+  
 end
