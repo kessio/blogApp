@@ -8,19 +8,19 @@ RSpec.describe 'User Page Show', type: :feature do
             bio: 'I love cats',
             posts_counter: 3
         )
-        @post1 = Post.create(
-            text: 'This is my first post',
+        @post1 = Post.new(
+            text: 'here we go again',
             comments_counter: 2,
             likes_counter: 3,
             author_id: @user.id
         )
-        @post2 = Post.create(
+        @post2 = Post.new(
             text: 'This is my second post',
             comments_counter: 2,
             likes_counter: 3,
             author_id: @user.id
         )
-        @post3 = Post.create(
+        @post3 = Post.new(
             text: 'This is my third post',
             comments_counter: 2,
             likes_counter: 3,
@@ -46,8 +46,10 @@ RSpec.describe 'User Page Show', type: :feature do
         expect(page).to have_content(@user.posts_counter)
       end
 
-      it 'shows user first three posts' do
-        expect(page).to have_content('This is my second post')
+      it 'shows last three posts of user' do
+        expect(page).to have_content(@post1.text)
+        expect(page).to have_content(@post2.text)
+        expect(page).to have_content(@post3.text)
       end
 
       it 'shows button for seeing all posts' do
