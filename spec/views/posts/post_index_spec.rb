@@ -21,7 +21,7 @@ RSpec.describe Post, type: :system do
         post_id: @post.id,
         author_id: @user.id
       )
-  end
+    end
     visit user_posts_path(@user.id)
   end
 
