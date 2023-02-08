@@ -6,8 +6,7 @@ RSpec.describe 'User Page Show', type: :feature do
             name: 'Tom',
             photo: 'https://unsplash.com/photos/F_-0BxGuVvo',
             bio: 'I love cats',
-            posts_counter: 3,
-            id: 2
+            posts_counter: 3
         )
         @post1 = Post.create(
             text: 'This is my first post',
@@ -48,12 +47,16 @@ RSpec.describe 'User Page Show', type: :feature do
       end
 
       it 'shows user first three posts' do
-        expect(page).to have_content(@post1.text)
+        expect(page).to have_content('This is my second post')
       end
 
+      it 'shows button for seeing all posts' do
+        expect(page).to have_link('See all posts')
+      end
 
-
-
-
+      it 'redirects to post show page upon click' do
+        click_link('See all posts')
+        expect(page).to have_current_path(user_posts_path(@user))
+      end
 
 end
