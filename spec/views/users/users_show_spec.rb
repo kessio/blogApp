@@ -32,6 +32,10 @@ RSpec.describe 'User Page Show', type: :feature do
         expect(page).to have_content(@tom.name)
       end
 
+      it 'shows the bio' do
+        expect(page).to have_content(@tom.bio)
+        end
+
       it 'shows  number of posts' do
         expect(page).to have_content(@tom.posts_counter)
       end
