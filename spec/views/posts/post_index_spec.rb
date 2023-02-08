@@ -8,15 +8,19 @@ RSpec.describe Post, type: :system do
       bio: 'Teacher',
       post_counter: 1
     )
-    @post = Post.create(title: 'Hello',
-                        text: 'My first post',
-                        author_id: @user.id)
+    @post = Post.create(
+      title: 'Hello',
+      text: 'My first post',
+      author_id: @user.id
+    )
     5.times do
-      Comment.create(post: @post,
-                     author: @user,
-                     text: 'Good job on the post',
-                     post_id: @post.id,
-                     author_id: @user.id)
+      Comment.create(
+        post: @post,
+        author: @user,
+        text: 'Good job on the post',
+        post_id: @post.id,
+        author_id: @user.id
+      )
   end
     visit user_posts_path(@user.id)
   end
