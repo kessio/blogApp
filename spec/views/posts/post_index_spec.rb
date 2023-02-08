@@ -29,5 +29,15 @@ RSpec.describe Post, type: :system do
     expect(page.body).to have_content(@user.post_counter.to_s)
   end
 
-  
+  it 'shows the body of a post' do
+    expect(page).to have_content('My first post')
+  end
+
+  it 'shows first comments on a post' do
+    expect(page).to have_content('Good job on the post')
+  end
+
+  it 'shows number of comments for a post' do
+    expect(page).to have_content('Comments: 5')
+  end
 end
