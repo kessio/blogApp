@@ -1,9 +1,10 @@
 <div class="post">
   <div class="title-info">
-    <h2>Post #<%= @post.id%></h2>
+    <h2><%= @post.title%></h2>
     <p>Comments: <%= @post.comments_counter%> Likes: <%= @post.likes_counter%></p>
   </div>
   <p><%= @post.text%></p>
+  <p class="post-author">Written by: <%= @post.author.name%></p>
 </div>
 <div class="comments">
   <% @post.comments.each do |comment|%>
