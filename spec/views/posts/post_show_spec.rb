@@ -15,15 +15,15 @@ RSpec.describe Post, type: :feature do
       author_id: @user.id
     )
     5.times do
-        Comment.create(
-          post: @post,
-          author: @user,
-          text: 'Good job on the post',
-          post_id: @post.id,
-          author_id: @user.id
-        )
-      end
-      visit user_post_path(@user.id, @post.id)   
+      Comment.create(
+        post: @post,
+        author: @user,
+        text: 'Good job on the post',
+        post_id: @post.id,
+        author_id: @user.id
+      )
+    end
+    visit user_post_path(@user.id, @post.id)
   end
 
   it 'shows post title' do
@@ -53,6 +53,4 @@ RSpec.describe Post, type: :feature do
   it 'shows comment body' do
     expect(page).to have_content('Good job on the post')
   end
-
-
 end

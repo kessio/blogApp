@@ -27,7 +27,7 @@ RSpec.describe Post, type: :feature do
   end
 
   it 'shows the profile picture of the user' do
-    assert page.has_xpath?("//img[@src ='https://unsplash.com/photos/F_-0BxGuVvo' and @alt='user profile']")  
+    assert page.has_xpath?("//img[@src ='https://unsplash.com/photos/F_-0BxGuVvo' and @alt='user profile']")
   end
 
 
@@ -67,5 +67,4 @@ RSpec.describe Post, type: :feature do
     click_link('Hello')
     expect(page).to have_current_path(user_post_path(@user.id, @post.id))
   end
-
 end
