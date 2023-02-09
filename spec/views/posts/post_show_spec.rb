@@ -30,5 +30,9 @@ RSpec.describe Post, type: :feature do
     expect(page).to have_content('Hello')
   end
 
+  it 'shows post author' do
+    expect(page).to have_content('Tom')
+  end
+
 
 end

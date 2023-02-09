@@ -4,6 +4,7 @@
     <p>Comments: <%= @post.comments_counter%> Likes: <%= @post.likes_counter%></p>
   </div>
   <p><%= @post.text%></p>
+  <p class="post-author">Written by: <%= @post.author.name%></p>
 </div>
 <div class="comments">
   <% @post.comments.each do |comment|%>
