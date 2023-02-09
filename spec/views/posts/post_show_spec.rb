@@ -34,5 +34,9 @@ RSpec.describe Post, type: :feature do
     expect(page).to have_content('Tom')
   end
 
+  it 'shows how many comments a post has' do
+    expect(page).to have_content('Comments: 5')
+  end
+
 
 end
