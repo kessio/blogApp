@@ -45,7 +45,14 @@ RSpec.describe Post, type: :feature do
   it 'shows the post body' do
     expect(page).to have_content('My first post')
   end
-  
+
+  it 'shows comment author' do
+    expect(page).to have_content('Tom')
+  end
+
+  it 'shows comment body' do
+    expect(page).to have_content('Good job on the post')
+  end
 
 
 end
