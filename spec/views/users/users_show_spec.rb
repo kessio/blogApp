@@ -9,18 +9,21 @@ RSpec.describe 'User Page Show', type: :feature do
       posts_counter: 3
     )
     @post1 = Post.new(
+      title: 'First Post',
       text: 'here we go again',
       comments_counter: 2,
       likes_counter: 3,
       author_id: @user.id
     )
     @post2 = Post.new(
+      title: 'Second Post',
       text: 'This is my second post',
       comments_counter: 2,
       likes_counter: 3,
       author_id: @user.id
     )
     @post3 = Post.new(
+      title: 'Third Post',
       text: 'This is my third post',
       comments_counter: 2,
       likes_counter: 3,
@@ -46,11 +49,17 @@ RSpec.describe 'User Page Show', type: :feature do
     expect(page).to have_content(@user.posts_counter)
   end
 
-  #it 'shows last three posts of user' do
-    #expect(page).to have_content(@post1.text)
-    #expect(page).to have_content(@post2.text)
-    #expect(page).to have_content(@post3.text)
-  #end
+  it 'shows last three posts of user' do
+    expect(page).to have_content(@post1.text)
+    expect(page).to have_content(@post2.text)
+    expect(page).to have_content(@post3.text)
+  end
+
+  it 'redirects to post show page upon click' do
+    click_link(@post1.title)
+    expect(page).to have_current_path(user_post_path(@user, @post1))
+  end
+
 
   it 'shows button for seeing all posts' do
     expect(page).to have_link('See all posts')
@@ -60,4 +69,7 @@ RSpec.describe 'User Page Show', type: :feature do
     click_link('See all posts')
     expect(page).to have_current_path(user_posts_path(@user))
   end
+
+
+
 end
