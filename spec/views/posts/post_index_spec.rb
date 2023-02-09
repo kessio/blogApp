@@ -30,7 +30,6 @@ RSpec.describe Post, type: :feature do
     assert page.has_xpath?("//img[@src ='https://unsplash.com/photos/F_-0BxGuVvo' and @alt='user profile']")
   end
 
-
   it 'shows the username of user' do
     expect(page).to have_content(@user.name)
   end

@@ -60,7 +60,6 @@ RSpec.describe 'User Page Show', type: :feature do
     expect(page).to have_current_path(user_post_path(@user, @post1))
   end
 
-
   it 'shows button for seeing all posts' do
     expect(page).to have_link('See all posts')
   end
