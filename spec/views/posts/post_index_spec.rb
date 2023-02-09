@@ -39,13 +39,17 @@ RSpec.describe Post, type: :feature do
     expect(page.body).to have_content(@user.posts_counter.to_s)
   end
 
+  it 'shows the post title' do
+    expect(page).to have_content('Hello')
+  end
+
   it 'shows the body of a post' do
     expect(page).to have_content('My first post')
   end
 
-  #it 'shows first comments on a post' do
-    #expect(page).to have_content('Good job on the post')
-  #end
+  it 'shows first comments on a post' do
+    expect(page).to have_content('Good job on the post')
+  end
 
   it 'shows number of comments for a post' do
     expect(page).to have_content('Comments: 5')
@@ -57,6 +61,11 @@ RSpec.describe Post, type: :feature do
 
   it 'shows section for pagination' do
     expect(page).to have_content('Pagination')
+  end
+
+  it 'redirects to the post show page when the post title is clicked' do
+    click_link('Hello')
+    expect(page).to have_current_path(user_post_path(@user.id, @post.id))
   end
 
 end

@@ -12,7 +12,8 @@
 
   <% @user.posts.each_with_index do |post, index|%>
       <div class="post">
-        <h3><%=link_to 'Post # ', user_post_path(@user.id, post.id), :class => 'link'%><%=index + 1%></h3>
+        <h4><%='Post # '%><%=index + 1%></h4>
+        <h3><%=link_to post.title, user_post_path(@user.id, post.id), :class => 'link'%></h3>
         <p><%= post.text %></p>
       <p class="likes-comments">Comments: <%= post.comments_counter%> Likes: <%= post.likes_counter%></p>
       </div>
