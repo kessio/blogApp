@@ -38,5 +38,14 @@ RSpec.describe Post, type: :feature do
     expect(page).to have_content('Comments: 5')
   end
 
+  it 'shows how many likes a post has' do
+    expect(page).to have_content('Likes: 0')
+  end
+
+  it 'shows the post body' do
+    expect(page).to have_content('My first post')
+  end
+  
+
 
 end
