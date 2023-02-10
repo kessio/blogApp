@@ -139,11 +139,16 @@ You can deploy this project using:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Sharon Kessio**
 
 - GitHub: [@kessio](https://github.com/kessio)
 - Twitter: [@kessio_sharon](https://twitter.com/kessio_sharon)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sharon-kessio-172220b5)
+
+👤 **Shuhad Loofer**
+
+- GitHub: [@Shuhad786](https://github.com/Shuhad786)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/shuhad-loofer)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
