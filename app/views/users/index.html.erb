@@ -1,4 +1,7 @@
 <div>
+<% if user_signed_in? %>
+    <%= button_to 'Sign out', destroy_user_session_path(@user), method: :delete, data: { turbo: false } %>
+    <% end %>
 <% @users.each do |user| %>
 <div class="user-container">
       <%= image_tag user.photo, :class => "photo", alt: "user profile" %>
