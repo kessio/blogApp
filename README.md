@@ -178,7 +178,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
+> Kindly show your support by leaving a star on this repository
 
 If you like this project...
 
@@ -190,7 +190,7 @@ If you like this project...
 
 > Give credit to everyone who inspired your codebase.
 
-I would like to thank...
+I give credit to my coding partner [@Shuhad786](https://github.com/Shuhad786) who's insight helped in making tis project a success
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
