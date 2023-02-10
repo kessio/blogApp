@@ -297,7 +297,7 @@ Devise.setup do |config|
   # end
   config.warden do |manager|
     manager.failure_app = TurboFailureApp
-  en
+  end
 
   # ==> Mountable engine configurations
   # When using Devise inside an engine, let's call it `MyEngine`, and this engine
