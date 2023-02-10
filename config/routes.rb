@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :admin_users
+  devise_for :users
   get 'likes/new'
   get 'comments/new'
   root 'users#index'
