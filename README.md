@@ -139,11 +139,16 @@ You can deploy this project using:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Sharon Kessio**
 
 - GitHub: [@kessio](https://github.com/kessio)
 - Twitter: [@kessio_sharon](https://twitter.com/kessio_sharon)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/sharon-kessio-172220b5)
+
+👤 **Shuhad Loofer**
+
+- GitHub: [@Shuhad786](https://github.com/Shuhad786)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/shuhad-loofer)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -173,9 +178,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-> Write a message to encourage readers to support your project
-
-If you like this project...
+If you like this project leave a star on this repository
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -183,9 +186,7 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
-
-I would like to thank...
+I give credit to my coding partner [@Shuhad786](https://github.com/Shuhad786) who's insight helped in making this project a success
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
